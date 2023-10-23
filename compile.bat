@@ -1,0 +1,1 @@
+gcc -o termon.exe main.c settings.c binaries.c settings.h binaries.h
