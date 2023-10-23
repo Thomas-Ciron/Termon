@@ -43,3 +43,17 @@ int read_integer(const char* file_name, const long start_index, int num_bytes) {
     fclose(file);
     return value;
 }
+
+
+int check_flag(int flag) {
+    return read_integer("binaries/flags.bin", (long)flag, 1);
+}
+
+void init_flags(int num_flags) {
+    unsigned char* bytes = (unsigned char*)malloc(num_flags);
+    for(int i = 0; i < num_flags; ++i) {
+        bytes[i] = 1;
+    }
+    save_bytes("binaries/flags.bin", bytes, num_flags);
+    free(bytes);
+}

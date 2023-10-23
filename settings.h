@@ -33,4 +33,11 @@ void init_settings();
  */
 void set_language(const char* short_language_name);
 
+/**
+ * @brief Get the language id
+ * 
+ * @return the language id
+ */
+int get_language();
+
 #endif

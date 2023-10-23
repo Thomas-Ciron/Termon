@@ -15,7 +15,7 @@ void save_settings() {
         value >>= 8;
     }
 
-    if(save_bytes("settings.bin", byte_array, NUM_SETTINGS_BYTES) == 0) printf("Data saved successfully !\n");
+    if(save_bytes("binaries/settings.bin", byte_array, NUM_SETTINGS_BYTES) == 0) printf("Data saved successfully !\n");
     else printf("Error 101 : couldn't save settings.\n");
 
     free(byte_array);
@@ -23,7 +23,7 @@ void save_settings() {
 
 void init_settings()
 {
-    const char* FILE_NAME = "settings.bin";
+    const char* FILE_NAME = "binaries/settings.bin";
     if(check_if_file_exists(FILE_NAME)) {
         language = read_integer(FILE_NAME, 0, 8);
     }
@@ -40,4 +40,8 @@ void set_language(const char* short_language_name) {
     else printf("Error 102 : unknown language.\n");
 
     save_settings();
+}
+
+int get_language() {
+    return language;
 }
