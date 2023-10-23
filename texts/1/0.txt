@@ -2,3 +2,5 @@ Hello there! Welcome to the world of Pokemon! My name is Oak! People call me the
 This world is inhabited by creatures called Pokemon!
 For some people, Pokemon are pets. Others use them for fights. Myself... I study Pokemon as a profession.
 First, what is your name?
+Right! So your name is %var!
+%var! Your very own Pokemon legend is about to unfold! A world of dreams and adventures with Pokemon awaits! Let's go!

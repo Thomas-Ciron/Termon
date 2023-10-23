@@ -6,7 +6,9 @@
 
 const char* VERSION = "1.00";
 
+// save data
 int location_id = 0;
+char name[16];
 
 void help() {
     printf("TERMON\n\n");
@@ -24,11 +26,22 @@ void help() {
     printf("    termon -l en\tSwitch language to English\n");
 }
 
+void message(int message_id) {
+    display_text(location_id, get_language(), message_id);
+}
+
+void message_with_variable(int message_id, const char* variable) {
+    display_text_with_variable(location_id, get_language(), message_id, variable);
+}
+
 void start_new_game() {
-    display_text(location_id, get_language(), 0);
-    display_text(location_id, get_language(), 1);
-    display_text(location_id, get_language(), 2);
-    display_text(location_id, get_language(), 3);
+    message(0);
+    message(1);
+    message(2);
+    message(3);
+    scanf("%s",name);
+    message_with_variable(4, name);
+    message_with_variable(5, name);
 }
 
 void start_game() {
