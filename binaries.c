@@ -1,6 +1,6 @@
 #include "binaries.h"
 
-int check_if_file_exists(const char* file_name) {
+int does_file_exist(const char* file_name) {
     FILE *file = fopen(file_name, "r");
     return file != NULL;
 }

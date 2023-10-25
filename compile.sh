@@ -1,1 +1,1 @@
-gcc -g -o termon_valgrind.exe main.c settings.c binaries.c settings.h binaries.h text.c text.h
+gcc -g -o termon_valgrind.exe main.c settings.c binaries.c settings.h binaries.h text.c text.h string.c string.h

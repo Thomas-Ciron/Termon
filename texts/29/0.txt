@@ -1,0 +1,6 @@
+Benvenuni nel mondo dei Pokémon! Il mio nome è Chen! La gente mi chiama il professore dei Pokémon!
+Questo mondo è abitato da creature chiamate Pokémon!
+Per alcuni i Pokémon sono animali domestici. Per altri, servono a combattere. Per quanto riguarda me... lo studio i Pokémon per vivere.
+Ma prima, come ti chiami?
+Bene, allora! Il tu nome è %var!
+%var! La tua leggenda sta per iniziare! Un monde di sogni e avventure Pokémon ti aspetta! Cominciamo!

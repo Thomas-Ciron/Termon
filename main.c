@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include <string.h>
+#include "string.h"
 #include <dirent.h>
 #include "text.h"
 #include "settings.h"
@@ -56,7 +56,7 @@ void start_game() {
     int num_files = 0;
 
     while((entry = readdir(dir)) != NULL) {
-        if(strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0) {
+        if(are_equal(entry->d_name, ".") != 0 && are_equal(entry->d_name, "..") != 0) {
             ++num_files;
         }
     }
@@ -78,12 +78,12 @@ void main(int argc, char** argv) {
         start_game();
     }
     else if(argc == 2) {
-        if(strcmp(argv[1], "--help") == 0 || strcmp(argv[1], "-h") == 0) help();
-        else if(strcmp(argv[1], "--version") == 0 || strcmp(argv[1], "-v") == 0) printf("Termon %s", VERSION);
+        if(are_equal(argv[1], "--help") || are_equal(argv[1], "-h")) help();
+        else if(are_equal(argv[1], "--version") || are_equal(argv[1], "-v")) printf("Termon %s", VERSION);
         else printf("Error 000 : unknown command.");
     }
     else if(argc == 3) {
-        if(strcmp(argv[1], "--language") == 0 || strcmp(argv[1], "-l") == 0) set_language(argv[2]);
+        if(are_equal(argv[1], "--language") || are_equal(argv[1], "-l")) set_language(argv[2]);
         else printf("Error 001 : unknown command.");
     }
 }

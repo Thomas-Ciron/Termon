@@ -24,7 +24,7 @@ void save_settings() {
 void init_settings()
 {
     const char* FILE_NAME = "binaries/settings.bin";
-    if(check_if_file_exists(FILE_NAME)) {
+    if(does_file_exist(FILE_NAME)) {
         language = read_integer(FILE_NAME, 0, 8);
     }
     else {
@@ -33,10 +33,10 @@ void init_settings()
 }
 
 void set_language(const char* short_language_name) {
-    if(strcmp(short_language_name, "en") == 0) language = ENGLISH;
-    else if(strcmp(short_language_name, "fr") == 0) language = FRENCH;
-    else if(strcmp(short_language_name, "de") == 0) language = GERMAN;
-    else if(strcmp(short_language_name, "it") == 0) language = ITALIAN;
+    if(are_equal(short_language_name, "en")) language = ENGLISH;
+    else if(are_equal(short_language_name, "fr")) language = FRENCH;
+    else if(are_equal(short_language_name, "de")) language = GERMAN;
+    else if(are_equal(short_language_name, "it")) language = ITALIAN;
     else printf("Error 102 : unknown language.\n");
 
     save_settings();

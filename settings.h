@@ -4,7 +4,7 @@
 #include "binaries.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include "string.h"
 
 /* How to set the language index ? 
  * Go to https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers

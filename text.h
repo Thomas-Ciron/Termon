@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * @brief Get the nth line of a text

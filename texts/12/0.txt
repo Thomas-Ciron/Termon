@@ -1,0 +1,6 @@
+Hallo! Willkommen in der Welt der Pokemon! Mein Name ist Chen! Die Leute nennen mich den Pokémon-Professor!
+Diese Welt wird von Kreaturen bewohnt, die Pokémon gennant werden!
+Für manche Menschen sind Pokémon Haustiere. Für andere sind sie zum Kämpfen da. Was mich betrifft... Ich studiere Pokémon, das ist mein Beruf.
+Aber wie ist dein Name?
+Genau! Dein Name ist also %var!
+%var! Deine eigene Legende wird bald beginnen! Eine Welt voller Traüme und Abenteuer mit Pokémon wartet auf dich! Los geht's!

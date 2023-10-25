@@ -10,7 +10,7 @@
  * @param file_name the name of the file
  * @return 0 if exists, ??? otherwise
  */
-int check_if_file_exists(const char* file_name);
+int does_file_exist(const char* file_name);
 
 /**
  * @brief Save bytes in a binary file.
